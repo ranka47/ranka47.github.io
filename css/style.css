@@ -16,6 +16,7 @@ html{
 } 
 body{
     font-size: 2rem;
+    background-image: url('../images/background.jpg');
 }
 
 .container{
@@ -43,7 +44,9 @@ body{
 }
 
 a:hover{
-  color: #999999;
+  color: #999999!important;
+  text-decoration: none;
+  cursor: pointer;
 }
 
 li{
@@ -160,19 +163,23 @@ h3{
 @media (max-width: 800px) {
   .home-page {
     width: 80%;
-    margin: 0 auto; }
-    .home-page .home-page__profile-card {
-      border-bottom: 0;
-      padding-bottom: 0;
-      margin-bottom: 2rem; }
-    .home-page .social-links__item {
-      -webkit-box-flex: 0;
-      -moz-box-flex: 0;
-      box-flex: 0;
-      -webkit-flex: 0 0 50%;
-      -moz-flex: 0 0 50%;
-      -ms-flex: 0 0 50%;
-      flex: 0 0 50%; } }
+    margin: 0 auto; 
+  }
+  .home-page .home-page__profile-card {
+    border-bottom: 0;
+    padding-bottom: 0;
+    margin-bottom: 2rem; 
+  }
+  .home-page .social-links__item {
+    -webkit-box-flex: 0;
+    -moz-box-flex: 0;
+    box-flex: 0;
+    -webkit-flex: 0 0 50%;
+    -moz-flex: 0 0 50%;
+    -ms-flex: 0 0 50%;
+    flex: 0 0 50%; 
+  } 
+}
 
 .profile-card {
   display: -webkit-box;
@@ -299,7 +306,8 @@ h3{
 .home-page__profile-card {
   padding-bottom: 3rem;
   margin-bottom: 3rem;
-  border-bottom: 2px solid #e7ebee; }
+  border-bottom: 2px solid #c9c9c9; 
+}
 
 .home-page__about {
   margin-bottom: 2rem; }
