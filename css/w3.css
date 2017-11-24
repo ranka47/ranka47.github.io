@@ -1,0 +1,13 @@
+﻿.w3-serif{font-family:serif}
+
+.w3-panel:after,.w3-panel:before{content:"";display:table;clear:both;}
+
+.w3-panel{margin-top:16px;margin-bottom:16px; padding:0.01em 16px}
+
+.w3-opacity:hover{opacity:0.60}
+
+.w3-xlarge{font-size:24px!important}.w3-xxlarge{font-size:36px!important}
+
+.w3-leftbar{border-left:6px solid #ccc!important}.w3-rightbar{border-right:6px solid #ccc!important}
+
+.w3-sand,.w3-hover-sand:hover{color:#000!important;background-color:#fdf5e6!important}
