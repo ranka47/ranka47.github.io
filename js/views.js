@@ -3,7 +3,9 @@ menuToHTML = {
     "about": "about",
     "projects": "projects",
     "CV": "CV",
-    "links": "links"
+    "links": "links",
+    "talks": "talks",
+    "contact": "contact"
 }
 
 function load(that){
