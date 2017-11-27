@@ -45,18 +45,13 @@ body{
 
 a:hover{
   color: #999999!important;
-  text-decoration: none;
-  cursor: pointer;
+  text-decoration: none!important;
+  cursor: pointer!important;
 }
 
 li{
     color: #373737;
     /*font-size: 18px;*/
-}
-
-li:hover{
-    color: #999999;
-
 }
 
 #photo {
@@ -91,6 +86,35 @@ h3{
     /*vertical-align: middle;*/
 }
 
+#project-div{
+  border: 1px solid #00000021;
+  margin-top: .5rem!important;
+  margin-bottom: .5rem!important;
+}
+
+.project-row{
+  border-bottom: 2px solid #c9c9c9;
+}
+
+.project-image-list{
+  display: inline-flex;
+}
+
+.project-image{
+  display: block;
+  margin: auto;
+}
+
+.card-title{
+  font-size: 2.0rem!important;
+  font-family: Segoe UI Semibold;
+  margin: auto;
+  /*text-align: center;*/
+}
+
+.project-card-description{
+  font-size: 1.6rem!important;
+}
 
 /**
  * Fixed vertical/horizontal centered island
@@ -121,7 +145,8 @@ h3{
   -o-align-items: center;
   align-items: center;
   -ms-flex-align: center;
-  height: 100%; }
+  margin-top: 20px;
+}
 
 .home-page {
   display: -webkit-box;
@@ -141,12 +166,8 @@ h3{
   -moz-flex-direction: column;
   flex-direction: column;
   -ms-flex-direction: column;
-  width: 60rem; }
-
-.home-page__profile-card {
-  padding-bottom: 3rem;
-  margin-bottom: 3rem;
-  border-bottom: 2px solid #e7ebee; }
+  width: 60rem; 
+  }
 
 .home-page__about {
   margin-bottom: 2rem; }
@@ -283,6 +304,7 @@ h3{
 
   .profile-card__portrait img {
     width: 100px; } }
+
 .home-page {
   display: -webkit-box;
   display: -moz-box;
@@ -301,7 +323,8 @@ h3{
   -moz-flex-direction: column;
   flex-direction: column;
   -ms-flex-direction: column;
-  width: 60rem; }
+  width: 60rem; 
+}
 
 .home-page__profile-card {
   padding-bottom: 3rem;
@@ -407,3 +430,7 @@ h3{
   -moz-flex: 0 0 50%;
   -ms-flex: 0 0 50%;
   flex: 0 0 50%; }
+
+.col-lg-4{
+  padding: 0px;
+}
