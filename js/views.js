@@ -27,4 +27,26 @@ function load(that){
             }
         });     
     }
+    showProjectList(that.innerText.trim())
+}
+
+var myIndex = 0;
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";
+    }
+    x[myIndex%x.length].style.display = "block";
+    x[(myIndex+1)%x.length].style.display = "block";  
+    setTimeout(carousel, 5000);
+    myIndex = (myIndex+1)%x.length;
+}
+
+function showProjectList(pageType){
+    if(pageType == "projects")
+        document.getElementById("project-list").style.visibility = "visible";
+    else
+        document.getElementById("project-list").style.visibility = "hidden";
 }
