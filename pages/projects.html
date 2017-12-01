@@ -1,12 +1,24 @@
 <div class="centered-container">
   <article class="home-page" style="width: 100rem;">
     <section class="home-page__about">
-      <p><b style="color: crimson">projects</b></p>
+      <div class="project-heading col-lg-12">
+        <p><b style="color: crimson">projects</b></p>
+        <!-- <ul id="project-list">
+          <li>ADHA</li>
+          <li>PLEXUS</li>
+          <li>Megamind</li>
+          <li>Battle of Hogwarts</li>
+          <li>VMS</li>
+          <li>Image Classification</li>
+          <li>Testing Framework for TDS</li>
+        </ul> -->
+      </div>
       <div class="app-page"> 
         <div class="container page-projects ">
           <div class="card-columns-1">
-            <div class="row project-row">
-              <h4 class="card-title">Assistive Device for Hand Amputees</h4>
+            <div class="row project-row" id="ADHA">
+              <h4 class="col-lg-12 card-title">Assistive Device for Hand Amputees</h4>
+              <h5 class="col-lg-12 project-guide"><b>Guide:</b> Prof. S. B. Nair, IIT Guwahati</h5>
               <div class="col-lg-12 project-image-list">
                 <div class="col-lg-6 project-image"><img width="100%" src="./projects/ADHA/circuit.jpg"></div>
                 <div class="col-lg-6 project-image"><img width="100%" src="./projects/ADHA/dumper.png"></div>
@@ -32,82 +44,106 @@
                 <!-- <a class="nav-link d-inline-block" href="./projects/ADHA" target="_blank">Robot-Mode</a> -->
               </div>
             </div>
-            <div class="row project-row">
-              <h4 class="card-title">PLEXUS</h4>
+            <div class="row project-row" id="STN">
+              <h4 class="col-lg-12 card-title">Image Classification using Spatial Transformer Networks</h4>
+              <h5 class="col-lg-12 project-guide"><b>Guide:</b> Prof. Arijit Sur, IIT Guwahati</h5>
+              <div class="col-lg-12 project-image-list">
+                <div class="col-lg-6 project-image"><img width="100%" src="./projects/STN/model.png"></div>
+                <!-- <div class="col-lg-6 project-image"><img width="100%" src="./projects/STN/gtea.png"></div> -->
+              </div>
+              <div class="col-lg-12">
+                <ul class="project-card-description">
+                  <li>Exploration of Spatial Transformer Networks proposed in <a href="https://papers.nips.cc/paper/5854-spatial-transformer-networks.pdf" target="_blank">Jaderberg et al. (NIPS 2015)</a></li>
+                  <li>Used it for object recognition in egocentric images by correcting the inherent distortions present in them using STN</li>
+                  <li><b>Datasets used:</b> Georgia Tech Egocentric Activities (GTEA) and Intel Egocentric Vision (IEV)</li> 
+                </ul>
+                <a class="nav-link d-inline-block" href="./projects/STN/report.pdf" target="_blank">Report</a>
+                <a class="nav-link d-inline-block" href="./projects/STN/presentation.pdf" target="_blank">Slides</a>
+              </div>
+            </div>
+            <div class="row project-row" id="Megamind">
+              <h4 class="col-lg-12 card-title">Text Readability Analysis using Language Models</h4>
+              <h5 class="col-lg-12 project-guide"><b>Guide:</b> Prof. Ashish Anand, IIT Guwahati</h5>
               <div class="col-lg-12 project-image-list">
                 <!-- <div class="col-lg-6 project-image"><img width="100%" src="./projects/Plexus/circuit.jpg"></div> -->
                 <!-- <div class="col-lg-6 project-image"><img width="100%" src="./projects/Plexus/dumper.png"></div> -->
               </div>
               <div class="col-lg-12">
                 <p class="project-card-description">
-                  It is a social media platform for the IITG Community. A place where alumni, students, and professors, can interact, collaborate and socialize. With latest news and updates from the campus, the alumni can experience the mood and the atmosphere of the campus from the other end of the world. 
+                  <ul class="project-card-description">
+                    <li>Designed a new fine-grained, computational measure of readability. Main conjecture was that the predictability of a text, as determined by standard language models, is a viable metric of its readability</li>
+                    <li>Evaluated our metric on various datasets with known readability scores, such as simple and standard Wikipedia articles, labeled datasets from prior work on automatic readability scoring systems, and even created a new dataset by parsing freely available school textbooks</li>
+                    <li>Obtained good results for all the three datasets, unlike earlier approaches</li>
+                  </ul>
                 </p>
-                <a class="nav-link d-inline-block" href="#" target="_blank"></a>
+                <a class="nav-link d-inline-block" href="./projects/Megamind/report.pdf" target="_blank">Report</a>
+                <a class="nav-link d-inline-block" href="./projects/Megamind/presentation.pdf" target="_blank">Slides</a>
+              </div>
+            </div>
+            <div class="row project-row" id="PLEXUS">
+              <h4 class="col-lg-12 card-title">PLEXUS</h4>
+              <h5 class="col-lg-12 project-guide"><b>Volunteer Work</b></h5>              
+              <div class="col-lg-12 project-image-list">
+                <script type="text/javascript">carousel();</script>
+                <div class="col-lg-6 project-image mySlides w3-animate-fading"><img width="100%" src="./projects/Plexus/home.png"></div>
+                <div class="col-lg-6 project-image mySlides w3-animate-fading"><img width="100%" src="./projects/Plexus/profile.png"></div>
+                <div class="col-lg-6 project-image mySlides w3-animate-fading"><img width="100%" src="./projects/Plexus/search.png"></div>
+                <div class="col-lg-6 project-image mySlides w3-animate-fading"><img width="100%" src="./projects/Plexus/news.png"></div>
+                <div class="col-lg-6 project-image mySlides w3-animate-fading"><img width="100%" src="./projects/Plexus/communities.png"></div>
+              </div>
+              <div class="col-lg-12">
+                <p class="project-card-description">
+                  As a volunteer work for Alumni and External Relations, I developed a social media platform for the IITG Community. It is a place where alumni, students, and professors, can interact, collaborate and socialize. With latest news and updates from the campus, the alumni can experience the mood and the atmosphere of the campus from the other end of the world. <br>
+                  Over the platform, one can search for their old friends, share experiences through blog, and checkout the honours received by their fellow mates. 
+                </p>
                 <a class="nav-link d-inline-block" href="https://github.com/sail-iitg/alumniportal" target="_blank">Code</a>
               </div>
             </div>
-            <div class="row project-row">
-              <h4 class="card-title">Battle of Hogwarts</h4>
+            <div class="row project-row" id="TDS">
+              <h4 class="col-lg-12 card-title">End-to-End Testing Framework for TDS</h4>
+              <h5 class="col-lg-12 project-guide"><b>Summer Intern</b> at Flipkart India Pvt. Ltd.</h5>
               <div class="col-lg-12 project-image-list">
                 <!-- <div class="col-lg-6 project-image"><img width="100%" src="./projects/Plexus/circuit.jpg"></div> -->
                 <!-- <div class="col-lg-6 project-image"><img width="100%" src="./projects/Plexus/dumper.png"></div> -->
               </div>
               <div class="col-lg-12">
                 <p class="project-card-description">
+                  <ul class="project-card-description">
+                    <li>Developed Functional and Performance Testing modules for the database architecture</li>
+                    <li>Identified bottlenecks and limitations in the TDS architecture</li>
+                    <li>Modularised to configure and develop new testing modules easily</li>
+                  </ul>
                 </p>
-                <a class="nav-link d-inline-block" href="#" target="_blank"></a>
-                <a class="nav-link d-inline-block" href="https://github.com/sail-iitg/alumniportal" target="_blank">Code</a>
+                <a class="nav-link d-inline-block" href="https://github.com/ranka47/tds-testing-module" target="_blank">Code</a>
               </div>
             </div>
-            <div class="row project-row">
-              <h4 class="card-title">Text Readability Analysis using Language Models</h4>
+            <div class="row project-row" id="BOH">
+              <h4 class="col-lg-12 card-title">Battle of Hogwarts</h4>
+              <h5 class="col-lg-12 project-guide"><b>Pet Project</b></h5>
               <div class="col-lg-12 project-image-list">
-                <!-- <div class="col-lg-6 project-image"><img width="100%" src="./projects/Plexus/circuit.jpg"></div> -->
+                <div class="col-lg-6 project-image"><img width="100%" src="./projects/Battle-of-Hogwarts/review.jpg"></div>
                 <!-- <div class="col-lg-6 project-image"><img width="100%" src="./projects/Plexus/dumper.png"></div> -->
               </div>
               <div class="col-lg-12">
                 <p class="project-card-description">
+                  A Harry-Potter themed MUD (Multi-User Dungeon) game based on <a href="http://www.evennia.com/" target="_blank">Evennia Platform (a python-based development system)</a>. Developed as part of the Technothlon event, organised by Techniche (IIT Guwahati) for senior-secondary school students. <br>
+                  <i>PS: It was fun to write an extended version of Harry Potter series for this game.</i>
                 </p>
-                <a class="nav-link d-inline-block" href="#" target="_blank"></a>
-                <a class="nav-link d-inline-block" href="https://github.com/sail-iitg/alumniportal" target="_blank">Code</a>
+                <a class="nav-link d-inline-block" href="https://github.com/ranka47/battle-of-hogwarts" target="_blank">Code</a>
               </div>
             </div>
-            <div class="row project-row">
-              <h4 class="card-title">Vehicle Management and Security</h4>
+            <div class="row project-row" id="VMS">
+              <h4 class="col-lg-12 card-title">Vehicle Management and Security</h4>
+              <h5 class="col-lg-12 project-guide"><b>Guide:</b> Prof. P. K. Das, IIT Guwahati</h5>              
               <div class="col-lg-12 project-image-list">
                 <!-- <div class="col-lg-6 project-image"><img width="100%" src="./projects/Plexus/circuit.jpg"></div> -->
                 <!-- <div class="col-lg-6 project-image"><img width="100%" src="./projects/Plexus/dumper.png"></div> -->
               </div>
               <div class="col-lg-12">
                 <p class="project-card-description">
+                  Led a team of 18. Web-based and android-based software for monitoring vehicles and peoples in the campus
+                  <br>Based on MVC pattern, worked on model component and designed backend. Integration testing and development of features like reporting of suspicious activites were the key tasks.
                 </p>
-                <a class="nav-link d-inline-block" href="#" target="_blank"></a>
-                <a class="nav-link d-inline-block" href="https://github.com/sail-iitg/alumniportal" target="_blank">Code</a>
-              </div>
-            </div>
-            <div class="row project-row">
-              <h4 class="card-title">Image Classification using Spatial Transformer Networks</h4>
-              <div class="col-lg-12 project-image-list">
-                <!-- <div class="col-lg-6 project-image"><img width="100%" src="./projects/Plexus/circuit.jpg"></div> -->
-                <!-- <div class="col-lg-6 project-image"><img width="100%" src="./projects/Plexus/dumper.png"></div> -->
-              </div>
-              <div class="col-lg-12">
-                <p class="project-card-description">
-                </p>
-                <a class="nav-link d-inline-block" href="#" target="_blank"></a>
-                <a class="nav-link d-inline-block" href="https://github.com/sail-iitg/alumniportal" target="_blank">Code</a>
-              </div>
-            </div>
-            <div class="row project-row">
-              <h4 class="card-title">End-to-End Testing Framework for TDS</h4>
-              <div class="col-lg-12 project-image-list">
-                <!-- <div class="col-lg-6 project-image"><img width="100%" src="./projects/Plexus/circuit.jpg"></div> -->
-                <!-- <div class="col-lg-6 project-image"><img width="100%" src="./projects/Plexus/dumper.png"></div> -->
-              </div>
-              <div class="col-lg-12">
-                <p class="project-card-description">
-                </p>
-                <a class="nav-link d-inline-block" href="#" target="_blank"></a>
                 <a class="nav-link d-inline-block" href="https://github.com/sail-iitg/alumniportal" target="_blank">Code</a>
               </div>
             </div>
