@@ -118,11 +118,16 @@ h3{
     /*vertical-align: middle;*/
 }
 
+@media (min-width: 801px){
+  .project-list{
+    position: fixed;
+  }
+}
 .project-list{
   padding: 0px 20px;
   visibility: hidden;
   display: initial;
-  position: fixed;
+  /*position: fixed;*/
 }
 
 #project-div{
