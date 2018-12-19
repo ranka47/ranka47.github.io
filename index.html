@@ -1,120 +1,575 @@
 <!DOCTYPE html>
-  <html>
-    <head>
-      <!--Import Google Icon Font-->
-      <!-- <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> -->
-      <!--Import materialize.css-->
-      <link type="text/css" rel="stylesheet" href="css/bootstrap.min.css"  media="screen,projection"/>
-      <link type="text/css" rel="stylesheet" href="css/font-awesome.min.css"  media="screen,projection"/>
-      <link type="text/css" rel="stylesheet" href="css/style.css"  media="screen,projection"/>
-      <!-- <link type="text/css" rel="stylesheet" href="css/w3.css"  media="screen,projection"/> -->
+<html lang="en">
 
-      <!--Let browser know website is optimized for mobile-->
-      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    </head>
+  <head>
 
-    <body>
-      <!--Import jQuery before materialize.js-->
-      <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
-      <script type="text/javascript" src="js/tether.min.js"></script>
-      <script type="text/javascript" src="js/bootstrap.min.js"></script>
-      <script type="text/javascript" src="js/views.js"></script>
-      <div class="container"> 
-        <div class="row">
-          <div class="col-lg-3 no-float" id="sidenav">
-            <div>
-                <p style="text-align: center; font-size:50px">&#10077;</p>
-                <p id="quote">Whatever you commit, give it your best.</p>
-            </div>
-            <div class="menu">
-              <ul style="list-style-type: circle; list-style-position: inside;">
-                <li><a href=""><i class="fa fa-home" aria-hidden="true"></i> home</a></li>
-                <li><a onclick="load(this)"><i class="fa fa-user" aria-hidden="true"></i> about</a></li>
-                <li><a onclick="load(this)"><i class="fa fa-tasks" aria-hidden="true"></i> projects</a></li>
-                <li><a onclick="load(this)"><i class="fa fa-bullhorn" aria-hidden="true"></i> talks</a></li>
-                <li><a onclick="load(this)"><i class="fa fa-address-card" aria-hidden="true"></i> contact</a></li>
-                <!-- <a onclick="load(this)"><li id="menuItem">links</li></a> -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Sumeet Ranka</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom fonts for this template -->
+    <!-- <link type="text/css" rel="stylesheet" href="css/style.css"  media="screen,projection"/> -->
+    <!-- <link type="text/css" rel="stylesheet" href="css/fontawesome.min.css"  media="screen,projection"/> -->
+    <link type="text/css" rel="stylesheet" href="css/fontawesome.min.css"  media="screen,projection"/>
+    <link type="text/css" rel="stylesheet" href="css/brands.min.css"  media="screen,projection"/>
+    <link type="text/css" rel="stylesheet" href="css/solid.min.css"  media="screen,projection"/>
+
+    <!-- Custom styles for this template -->
+    <link href="css/style.css" rel="stylesheet">
+
+  </head>
+
+  <body id="page-top">
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
+      <a class="navbar-brand js-scroll-trigger" href="#page-top">
+        <span class="d-block d-lg-none">Sumeet Ranka</span>
+        <span class="d-none d-lg-block">
+          <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="img/profile.jpg" alt="">
+        </span>
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#about">about</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#projects">projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#experience">experience</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#skills">skills</a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#publications">publications</a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#talks">talks</a>
+          </li>
+          <!-- <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#blogs">blogs</a>
+          </li> -->
+            <!-- <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#education">education</a>
+          </li> -->
+          <!-- <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#interests">interests</a>
+          </li> -->
+          <!-- <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#awards">awards</a>
+          </li> -->
+          <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#contact">contact</a>
+          </li>  
+        </ul>
+      </div>
+    </nav>
+
+    <div class="container-fluid p-0">
+
+      <section class="resume-section p-3 p-lg-5 d-flex d-column" id="about">
+        <div class="my-auto">
+          <h2 class="mb-5">SUMEET
+            <span class="text-primary">RANKA</span>
+          </h2>
+          <!-- <div class="subheading mb-5">
+            MScAC @ UofT | B. Tech (CSE) from IIT Guwahati
+          </div> -->
+          <!-- <div class="subheading mb-5">Enthusiast, Thinker, IITian ·
+            <a href="mailto:sumeetranka47@gmail.com">sumeetranka47@gmail.com</a>
+          </div> -->
+          <p class="lead mb-5"> Hi. Thanks for stopping by.
+            <br> 
+            I am currently pursuing my <b>Master's degree</b> at the University of Toronto in the department of Computer Science. My research interests are Applied Machine Learning and Statistical Machine Learning.
+            <br>
+            <br>
+            I graduated from IIT Guwahati in 2017 with a major in Computer Science and Engineering. I also worked at Samsung Research Institute as a Research Engineer in the Intelligence and IoT Division.
+            <br>
+            <br>
+            I find it fun to complete my tasks easily by writing code. 
+            <br>
+            <br>
+            You can contact me through any of the medium mentioned below. <b>Have Fun! <i class="fa fa-smile-o" aria-hidden="true"></i></b></p>
+            <ul class="icons-list">
+                <li class="icons-list__item">
+                  <a href="https://github.com/ranka47/" rel="nofollow" target="_blank" title="Look through my Github profile">
+                    <i class="fab fa-github" aria-hidden="true"></i>
+                    Github
+                  </a>
+                </li>
+                <li class="icons-list__item">
+                  <a href="https://twitter.com/ranka47/" rel="nofollow" target="_blank" title="Tweet me!">
+                    <i class="fab fa-twitter" aria-hidden="true"></i>
+                    Twitter
+                  </a>
+                </li>
+                <li class="icons-list__item">
+                  <a href="https://www.linkedin.com/in/ranka47" rel="nofollow" target="_blank" title="See my LinkedIn profile">
+                    <i class="fab fa-linkedin" aria-hidden="true"></i>
+                    LinkedIn
+                  </a>
+                </li>
               </ul>
             </div>
-            <div class="project-list" id="project-list">
-              <ul style="list-style-type: none; list-style-position: inside; font-size: 14px; text-align: center;">
-                <li><b style="color: crimson">project list</b></li>
-                <li><a href="#ADHA">ADHA</a></li>
-                <li><a href="#STN">STN</a></li>
-                <li><a href="#Megamind">Megamind</a></li>
-                <li><a href="#PLEXUS">PLEXUS</a></li>
-                <li><a href="#TDS">Summer Intern</a></li>
-                <li><a href="#BOH">Battle of Hogwarts</a></li>
-                <li><a href="#VMS">Vehicle Management &amp; Security </a></li>
-              </ul>
-            </div>
-          </div>
-          <div class="col-lg-9 no-float" id="details">
-            <title>Sumeet Ranka | Home</title>
-            <div class="centered-container">
-              <article class="home-page">
-                <section class="home-page__profile-card">
-                  <div class="profile-card">
-                    <div class="profile-card__portrait" title="Sumeet Ranka">
-                      <img src="./images/profile.jpg" id="photo" alt="Sumeet Ranka - Software Developer">
+          </section>
+          
+          <hr class="m-0">
+          <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="projects">
+              <div class="my-auto">
+                <h3 class="mb-5 heading">projects</h3>
+      
+                <div class="resume-item d-flex flex-column flex-md-row mb-5">
+                  <div class="resume-content mr-auto">
+                    <h4 class="mb-0">The Tempest</h4>
+                    <div class="subheading mb-3">Prof. Karan Singh, University of Toronto</div>
+                    <p>Theatrical presentation of the play, <i>The Tempest</i>, on a 180-degree curved screen leveraging the concept of proprioception and 3-D drawing for the character Ariel
+                    <ul>
+                      <li>Inclusion of proprioception to trigger the events based on zones selected instead of explicit display of menu items</li>
+                      <li>Performed comparative analysis between pre-defined and user-defined zones to understand the user’s comfort level</li>
+                    </ul>
+                    <b>Tools:</b> Unity, C#
+                    <br>
+                    <b>Links:</b>
+                    </p>
+                  </div>
+                  <div class="resume-date text-md-right">
+                    <span class="text-primary">Sep 2018 - Dec 2018</span>
+                  </div>
+                </div>
+      
+                <div class="resume-item d-flex flex-column flex-md-row mb-5">
+                  <div class="resume-content mr-auto">
+                    <h4 class="mb-0">Using Spatial Transformer Networks for Egocentric Images</h4>
+                    <div class="subheading mb-3">Dr. Arijit Sur, IIT Guwahati</div>
+                    <p>
+                      <ul>
+                        <li>Implemented <a href="https://papers.nips.cc/paper/5854-spatial-transformer-networks.pdf">spatial transformer networks</a> for object recognition and activity prediction from egocentric images</li>
+                        <li>Evaluated it on GTEA (Georgia Tech Egocentric Activities) dataset. The model showed better results than a traditional CNN model</li>
+                      </ul>
+                      <b>Tools:</b> Python, TensorFlow
+                      <br>
+                      <b>Links:</b>
+                   </p>
+                  </div>
+                  <div class="resume-date text-md-right">
+                    <span class="text-primary">Sep 2016 - Nov 2016</span>
+                  </div>
+                </div>
+      
+                <div class="resume-item d-flex flex-column flex-md-row mb-5">
+                  <div class="resume-content mr-auto">
+                    <h4 class="mb-0">Assistive Device for Hand Amputees</h4>
+                    <div class="subheading mb-3">Dr. S. B. Nair, IIT Guwahati</div>
+                    <p>ADHA is a device that is designed to support people who have had both their arms amputated above or below the elbow. It provides two major types of support:
+                      <ul>
+                        <li>Enable the user to connect to the digital world by forming a convenient interface to a computer's keyboard and mouse.</li>
+                        <li>Enable the user to transport heavy objects by having a transport robot that they can control.</li>
+                      </ul>
+                      <b>Tools:</b> Arduino, Python
+                      <br>
+                      <b>Links:</b>
+                    </p>
+                  </div>
+                  <div class="resume-date text-md-right">
+                    <span class="text-primary">Oct 2015 - Nov 2015</span>
+                  </div>
+                </div>
+      
+                <div class="resume-item d-flex flex-column flex-md-row mb-5">
+                  <div class="resume-content mr-auto">
+                    <h4 class="mb-0">Text Readability Analysis using Language Models</h4>
+                    <div class="subheading mb-3">Prof. Ashish Anand, IIT Guwahati</div>
+                    <p>
+                      <ul>
+                        <li>Designed a new fine-grained, computational measure of readability. Main conjecture was that the predictability of a text, as determined by standard language models, is a viable metric of its readability</li>
+                        <li>Evaluated our metric on various datasets with known readability scores, such as simple and standard Wikipedia articles, labeled datasets from prior work on automatic readability scoring systems, and even created a new dataset by parsing freely available school textbooks</li>
+                        <li>Obtained good results for all the three datasets, unlike earlier approaches</li>
+                      </ul>
+                      <b>Tools:</b> Arduino, Python
+                      <br>
+                      <b>Links:</b>
+                    </p>
+                  </div>
+                  <div class="resume-date text-md-right">
+                    <span class="text-primary">Feb 2017 - Apr 2017</span>
+                  </div>
+                </div>
+
+                <div class="resume-item d-flex flex-column flex-md-row">
+                    <div class="resume-content mr-auto">
+                      <h4 class="mb-0">Battle of Hogwarts</h4>
+                      <div class="subheading mb-3">Pet Project</div>
+                      <p>
+                        A Harry-Potter themed MUD (Multi-User Dungeon) game based on <a href="http://www.evennia.com/">Evennia Platform (a python-based development system)</a>. Developed as part of the Technothlon event, organised by Techniche (IIT Guwahati) for senior-secondary school students.<br>
+                        PS: It was fun to write an extended version of Harry Potter series for this game.
+                        <br>
+                        <b>Links:</b> 
+                      </p>
                     </div>
-                    <div class="profile-card__details">
-                      <h1 class="profile-card__title">Sumeet Ranka</h1>
-                      <h2 class="profile-card__subtitle">Enthusiast, Thinker, IITian</h2>
+                    <div class="resume-date text-md-right">
+                      <span class="text-primary"></span>
                     </div>
                   </div>
-                </section>
+              </div>
+      
+          </section>
+          <hr class="m-0">
 
-                <section class="home-page__about">
-                  <p>
-                    Hi. Thanks for stopping by.<br> I am currently working as a <b>Research Engineer</b> in Samsung Research Institute - Bangalore. I find it fun to complete my tasks easily by writing code.<br>
-                    My research interests are Human-Computer Interaction, Virtual-Reality/Augmented Reality and Data Mining. I want to work in the direction of using machines to simplify human life.<br><br>
+      <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="experience">
+        <div class="my-auto">
+          <h3 class="mb-5 heading">Experience</h3>
 
-                    You can contact me through any of the medium mentioned below. <b>Have Fun! <i class="fa fa-smile-o" aria-hidden="true"></i></b>
-                  </p>
-                </section>
-                <ul class="icons-list">
-                  <li class="icons-list__item">
-                    <a href="mailto:sumeet.ranka47@gmail.com" rel="nofollow" target="_blank" title="Send me an email">
-                    <i class="fa fa-envelope" aria-hidden="true"></i>
-                    Email
-                    </a>
-                  </li>
-                  <li class="icons-list__item">
-                    <a href="https://github.com/ranka47/" rel="nofollow" target="_blank" title="Look through my Github profile">
-                      <i class="fa fa-github" aria-hidden="true"></i>
-                      Github
-                    </a>
-                  </li>
-                  <li class="icons-list__item">
-                    <a href="https://twitter.com/ranka47/" rel="nofollow" target="_blank" title="Tweet me!">
-                      <i class="fa fa-twitter" aria-hidden="true"></i>
-                      Twitter
-                    </a>
-                  </li>
-                  <li class="icons-list__item">
-                    <a href="https://www.linkedin.com/in/ranka47" rel="nofollow" target="_blank" title="See my LinkedIn profile">
-                      <i class="fa fa-linkedin" aria-hidden="true"></i>
-                      LinkedIn
-                    </a>
-                  </li>
-                  <li class="icons-list__item">
-                    <a href="skype:sumeetranka" rel="nofollow" target="_blank" title="Call me on Skype">
-                      <i class="fa fa-skype" aria-hidden="true"></i>
-                      Skype
-                    </a>
-                  </li>
-                  <li class="icons-list__item">
-                    <a href="https://www.facebook.com/ranka47" rel="nofollow" target="_blank" title="Message me on Facebook">
-                      <i class="fa fa-facebook" aria-hidden="true"></i>
-                      Facebook
-                    </a>
-                  </li>
+          <div class="resume-item d-flex flex-column flex-md-row mb-5">
+            <div class="resume-content mr-auto">
+              <h4 class="mb-0">Research Engineer</h4>
+              <div class="subheading mb-3">Samsung Research Institute - Bangalore</div>
+              <p>Bring to the table win-win survival strategies to ensure proactive domination. At the end of the day, going forward, a new normal that has evolved from generation X is on the runway heading towards a streamlined cloud solution. User generated content in real-time will have multiple touchpoints for offshoring.</p>
+            </div>
+            <div class="resume-date text-md-right">
+              <span class="text-primary">Jun 2017 - Aug 2017</span>
+            </div>
+          </div>
+
+          <div class="resume-item d-flex flex-column flex-md-row">
+            <div class="resume-content mr-auto">
+              <h4 class="mb-0">Software Engineering Intern</h4>
+              <div class="subheading mb-3">Flipkart Pvt. Ltd.</div>
+              <p>
+                <ul>
+                  <li>Developed functional and performance testing modules for a hierarchical database architecture</li>
+                  <li>Identified bottlenecks and limitations in the underlying database architecture</li>
+                  <li>Modularised to configure and develop new testing modules easily</li>
                 </ul>
-              </article>
+                <b>Tools:</b> Apache JMeter
+              </p>
+            </div>
+            <div class="resume-date text-md-right">
+              <span class="text-primary">May 2016 - Jul 2016</span>
             </div>
           </div>
         </div>
-      </div>
-    </body>
-  </html>
+
+      </section>
+
+      <hr class="m-0">
+
+      <!-- <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="education">
+        <div class="my-auto">
+          <h3 class="mb-5 heading">Education</h3>
+
+          <div class="resume-item d-flex flex-column flex-md-row mb-5">
+            <div class="resume-content mr-auto">
+              <h4 class="mb-0">University of Colorado Boulder</h3>
+              <div class="subheading mb-3">Bachelor of Science</div>
+              <div>Computer Science - Web Development Track</div>
+              <p>GPA: 3.23</p>
+            </div>
+            <div class="resume-date text-md-right">
+              <span class="text-primary">August 2006 - May 2010</span>
+            </div>
+          </div>
+
+          <div class="resume-item d-flex flex-column flex-md-row">
+            <div class="resume-content mr-auto">
+              <h4 class="mb-0">James Buchanan High School</h3>
+              <div class="subheading mb-3">Technology Magnet Program</div>
+              <p>GPA: 3.56</p>
+            </div>
+            <div class="resume-date text-md-right">
+              <span class="text-primary">August 2002 - May 2006</span>
+            </div>
+          </div>
+
+        </div>
+      </section> -->
+
+      <!-- <hr class="m-0"> -->
+
+      <section class="resume-section p-3 p-lg-5 d-flex d-column" id="skills">
+        <div class="my-auto">
+          <h3 class="mb-5 heading">Skills</h3>
+          <div class="resume-item d-flex flex-column flex-md-row mb-3">
+              <div class="resume-content mr-auto">
+                <h5 class="mb-0">Languages</h5>
+                <p>
+                  <ul class="list-inline">
+                      <li class="list-inline-item">C</li>
+                      <li class="list-inline-item">
+                        C++
+                      </li>
+                      <li class="list-inline-item">
+                        Python
+                      </li>
+                      <li class="list-inline-item">
+                        Scala
+                      </li>
+                      <li class="list-inline-item">
+                        C#
+                      </li>
+                    </ul>
+                </p>
+              </div>
+          </div>
+
+          <div class="resume-item d-flex flex-column flex-md-row mb-3">
+              <div class="resume-content mr-auto">
+                <h5 class="mb-0">Big Data Tools/Libraries</h5>
+                <p>
+                    <ul class="list-inline">
+                        <li class="list-inline-item">
+                          TensorFlow
+                        </li>
+                        <li class="list-inline-item">
+                          NumPy
+                        </li>
+                        <li class="list-inline-item">
+                          SciPy
+                        </li>
+                        <li class="list-inline-item">
+                          spaCy
+                        </li>
+                        <li class="list-inline-item">
+                          Apache Spark
+                        </li>
+                      </ul>
+                </p>
+              </div>
+          </div>
+
+          <div class="resume-item d-flex flex-column flex-md-row mb-3">
+              <div class="resume-content mr-auto">
+                <h5 class="mb-0">Frameworks/IDE</h5>
+                <p>
+                    <ul class="list-inline">
+                        <li class="list-inline-item">
+                          Visual Studio
+                        </li>
+                        <li class="list-inline-item">
+                          Unity
+                        </li>
+                        <li class="list-inline-item">
+                          Django
+                        </li>
+                        <li class="list-inline-item">
+                          Apache JMeter
+                        </li>
+                      </ul>
+                </p>
+              </div>
+          </div>
+
+          <div class="resume-item d-flex flex-column flex-md-row">
+              <div class="resume-content mr-auto">
+                <h5 class="mb-0">Miscellaneous</h5>
+                <p>
+                    <ul class="list-inline">
+                        <li class="list-inline-item">
+                          LaTeX
+                        </li>
+                        <li class="list-inline-item">
+                          Git
+                        </li>
+                      </ul>
+                </p>
+              </div>
+          </div>
+        </div>
+      </section>
+
+      <hr class="m-0">
+
+      <section class="resume-section p-3 p-lg-5 d-flex d-column" id="publications">
+          <div class="my-auto">
+            <h3 class="mb-5 heading">Publications</h3>
+  
+            <div class="resume-item d-flex flex-column flex-md-row">
+              <div class="resume-content mr-auto">
+                <h4 class="mb-0">USHEr: User Separation in Home Environment</h4>
+                <div class="subheading mb-3"><i><u>Sumeet Ranka</u>, Vishal Singh, Mainak Choudhury</i></div>
+                <div class="subheading mb-3"><b>Published at: </b>International Conference on Smart Homes and Health Telematics (ICOST), 2018</div>
+                <p><b>Abstract:</b>
+                  <br>
+                  With the increase in presence of smart devices in our daily life, it is an important problem for these devices to be more intelligent. The most sought after problems in this area are activity recommendation and prediction. Researchers have proposed solutions for this problem, however, most of them are based on single-user home space. In this paper, we propose an unsupervised approach to separate the logs of multi-user home space into buckets equal to the number of users. With a minimal set of assumptions, the aim of the method is to transform the multi-user problem to a single-user problem. It is achieved by estimating the layout of the house and then tracking the users at room-level. We achieved empirically-determined high precision in estimating the layout and 74% accuracy in separating the multi-user stream.
+                  <br>
+                  <br>
+                  <b>Links:</b> <a href="https://link.springer.com/chapter/10.1007/978-3-319-94523-1_19">[paper]</a>
+                </p>
+              </div>
+            </div>
+          </div>
+  
+        </section>
+  
+        <hr class="m-0">
+  
+        <section class="resume-section p-3 p-lg-5 d-flex d-column" id="talks">
+            <div class="my-auto">
+              <h3 class="mb-5 heading">Talks</h3>
+    
+              <div class="resume-item d-flex flex-column flex-md-row mb-5">
+                <div class="resume-content mr-auto">
+                  <h4 class="mb-0">Making Homes Smarter using Machine Learning</h4>
+                  <p>
+                    Delivered as a guest speaker in <a href="https://sites.google.com/site/qipstcml2017/">QIP-STC 2017</a>, conducted by Indian Institute of Technology (BHU) Varanasi, titled on Machine Learning: Trends, Perspectives, and Prospects
+                    <br>
+                    <br>
+                    <span style="font-size: 12px;">Slides cannot be made public</span>
+                  </p>
+                </div>
+              </div>
+
+              <div class="resume-item d-flex flex-column flex-md-row mb-5">
+                  <div class="resume-content mr-auto">
+                    <h4 class="mb-0">Campus Network Architecture</h4>
+                    <p>
+                      Tech-Talk in Indian Institute of Technology Guwahati explaining and answering questions about the intricate details of the internal network of the college. It was an interest-based exploration that resulted in a talk.
+                      <br>
+                      <br>
+                      <b>Links:</b> <a href="https://ranka47.github.io/talks/iitg-network.pdf">Slides</a>
+                    </p>
+                  </div>
+                </div>
+
+                <div class="resume-item d-flex flex-column flex-md-row">
+                    <div class="resume-content mr-auto">
+                      <h4 class="mb-0">Object Oriented Programming</h4>
+                      <p>
+                        Another tech-talk out of interest for the final year undergraduate and graduate students on the basics of Object Oriented Programming.
+                        <br>
+                        <br>
+                        <ul class="list-inline">
+                            <li class="list-inline-item">
+                              <b>Links:</b>
+                            </li>
+                            <li class="list-inline-item">
+                              <a href="https://ranka47.github.io/talks/OOPS.pdf">Slides</a>
+                            </li>
+                            <li class="list-inline-item">
+                              <a href="https://github.com/ranka47/CPP-Concepts">Code</a>
+                            </li>
+                        </ul>
+                      </p>
+                    </div>
+                  </div>
+            </div>
+          </section>
+    
+          <hr class="m-0">
+      <!-- blogs -->
+      <section class="resume-section p-3 p-lg-5 d-flex d-column" id="contact">
+          <div class="my-auto">
+            <h3 class="mb-5 heading">Contact</h3>
+  
+            <div class="resume-item d-flex flex-column flex-md-row mb-5">
+              <div class="resume-content mr-auto">
+                <p>
+                  <b style="color: #373737">email: </b>ranka47 [at] cs [dot] toronto [dot] edu
+                  <br>
+                  <br>
+                  <b style="color: #373737">address: </b>10 Irwin Avenue, Toronto, Canada
+                  <a href="https://goo.gl/maps/GmAT7FsZj9t">
+                    <i class="fas fa-location-arrow" aria-hidden="true"></i>
+                    ON M4Y 1K9
+                  </a>
+                  <br>
+                  <br>
+                  <ul class="icons-list">
+                      <li class="icons-list__item">
+                        <a href="https://github.com/ranka47/" rel="nofollow" target="_blank" title="Look through my Github profile">
+                          <i class="fab fa-github fa-2x" aria-hidden="true"></i>
+                        </a>
+                      </li>
+                      <li class="icons-list__item">
+                        <a href="https://twitter.com/ranka47/" rel="nofollow" target="_blank" title="Tweet me!">
+                          <i class="fab fa-twitter fa-2x" aria-hidden="true"></i>
+                        </a>
+                      </li>
+                      <li class="icons-list__item">
+                        <a href="https://www.linkedin.com/in/ranka47" rel="nofollow" target="_blank" title="See my LinkedIn profile">
+                          <i class="fab fa-linkedin fa-2x" aria-hidden="true"></i>
+                        </a>
+                      </li>
+                    </ul>
+                </p>
+              </div>
+            </div>
+          </div>
+  
+        </section>
+
+
+
+      <!-- <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="interests">
+        <div class="my-auto">
+          <h3 class="mb-5 heading">Interests</h3>
+          <p>Apart from being a web developer, I enjoy most of my time being outdoors. In the winter, I am an avid skier and novice ice climber. During the warmer months here in Colorado, I enjoy mountain biking, free climbing, and kayaking.</p>
+          <p class="mb-0">When forced indoors, I follow a number of sci-fi and fantasy genre movies and television shows, I am an aspiring chef, and I spend a large amount of my free time exploring the latest technology advancements in the front-end web development world.</p>
+        </div>
+      </section> -->
+
+      <!-- <hr class="m-0"> -->
+
+      <!-- <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="awards">
+        <div class="my-auto">
+          <h3 class="mb-5 heading">Awards &amp; Certifications</h3>
+          <ul class="fa-ul mb-0">
+            <li>
+              <i class="fa-li fa fa-trophy text-warning"></i>
+              Google Analytics Certified Developer</li>
+            <li>
+              <i class="fa-li fa fa-trophy text-warning"></i>
+              Mobile Web Specialist - Google Certification</li>
+            <li>
+              <i class="fa-li fa fa-trophy text-warning"></i>
+              1<sup>st</sup>
+              Place - University of Colorado Boulder - Emerging Tech Competition 2009</li>
+            <li>
+              <i class="fa-li fa fa-trophy text-warning"></i>
+              1<sup>st</sup>
+              Place - University of Colorado Boulder - Adobe Creative Jam 2008 (UI Design Category)</li>
+            <li>
+              <i class="fa-li fa fa-trophy text-warning"></i>
+              2<sup>nd</sup>
+              Place - University of Colorado Boulder - Emerging Tech Competition 2008</li>
+            <li>
+              <i class="fa-li fa fa-trophy text-warning"></i>
+              1<sup>st</sup>
+              Place - James Buchanan High School - Hackathon 2006</li>
+            <li>
+              <i class="fa-li fa fa-trophy text-warning"></i>
+              3<sup>rd</sup>
+              Place - James Buchanan High School - Hackathon 2005</li>
+          </ul>
+        </div>
+      </section> -->
+
+      <!-- <hr class="m-0"> -->
+
+
+    </div>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="js/jquery.easing.min.js"></script>
+
+    <!-- Custom scripts for this template -->
+    <script src="js/views.js"></script>
+    <!-- <script src="js/fontawesome.min.js"></script> -->
+
+  </body>
+
+</html>
