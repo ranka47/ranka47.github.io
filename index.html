@@ -91,17 +91,17 @@
           </div> -->
           <p class="lead mb-5"> Hi. Thanks for stopping by.
             <br> 
-            I am currently pursuing my <b>Master's degree</b> at the University of Toronto in the department of Computer Science. My research interests are Applied Machine Learning and Statistical Machine Learning.
+            I am currently pursuing my <b>Master's degree</b> at the University of Toronto in the department of Computer Science. My research interest is mainly Applied Machine Learning. I have experience working with <a href="#stn">images</a> and <a href="#megamind">texts</a>. Currently, I am working with signals and clinical dataset.
             <br>
             <br>
-            I graduated from IIT Guwahati in 2017 with a major in Computer Science and Engineering. I also worked at Samsung Research Institute as a Research Engineer in the Intelligence and IoT Division.
+            I graduated from IIT Guwahati in 2017 with a major in Computer Science and Engineering. I also worked at Samsung Research Institute as a Research Engineer in the IoT R&D Division.
             <br>
             <br>
             I find it fun to complete my tasks easily by writing code. 
             <br>
             <br>
-            You can contact me through any of the medium mentioned below. <b>Have Fun! <i class="fa fa-smile-o" aria-hidden="true"></i></b></p>
-            <ul class="icons-list">
+            You can contact me through any of the medium mentioned <a href="#contact">below</a>. <b>Have Fun! <i class="fa fa-smile-o" aria-hidden="true"></i></b></p>
+            <!-- <ul class="icons-list">
                 <li class="icons-list__item">
                   <a href="https://github.com/ranka47/" rel="nofollow" target="_blank" title="Look through my Github profile">
                     <i class="fab fa-github" aria-hidden="true"></i>
@@ -120,7 +120,7 @@
                     LinkedIn
                   </a>
                 </li>
-              </ul>
+              </ul> -->
             </div>
           </section>
           
@@ -128,8 +128,34 @@
           <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="projects">
               <div class="my-auto">
                 <h3 class="mb-5 heading">projects</h3>
-      
-                <div class="resume-item d-flex flex-column flex-md-row mb-5">
+
+                <div id="gan" class="resume-item d-flex flex-column flex-md-row mb-5">
+                  <div class="resume-content mr-auto">
+                    <h4 class="mb-0">Evaluating GANs using Efficient Real-World Estimate</h4>
+                    <div class="subheading mb-3">Prof. Roger Grosse, University of Toronto</div>
+                    <p>Proposed a MCMC sampling method using Metropolis-Hastings algorithm for obtaining samples from <i>p<sub>r</sub></i> using samples from the generator <i>G</i>
+                      <ul>
+                        <li>Observed higher acceptance and less rejection percentage around the modes</li>
+                        <li>Can be used to monitor the difference between the trained generator and the real-world estimate of the discriminator</li>
+                      </ul>
+                      <b>Team:</b> Vaibhav Saxena, Pulkit Mathur
+                      <br>         
+                      <ul class="list-inline">
+                        <li class="list-inline-item">
+                          <b>Links:</b>
+                        </li>
+                        <li class="list-inline-item">
+                          <a href="./projects/GAN/report.pdf">Report</a>
+                      </li>
+                    </ul> 
+                    </p>
+                  </div>
+                  <div class="resume-date text-md-right">
+                    <span class="text-primary">Sep 2018 - Dec 2018</span>
+                  </div>
+                </div>
+
+                <div id="tempest" class="resume-item d-flex flex-column flex-md-row mb-5">
                   <div class="resume-content mr-auto">
                     <h4 class="mb-0">The Tempest</h4>
                     <div class="subheading mb-3">Prof. Karan Singh, University of Toronto</div>
@@ -138,6 +164,8 @@
                       <li>Inclusion of proprioception to trigger the events based on zones selected instead of explicit display of menu items</li>
                       <li>Performed comparative analysis between pre-defined and user-defined zones to understand the user’s comfort level</li>
                     </ul>
+                    <b>Team:</b> Andrejs Ru, Sahil Narula, Sneha Desai
+                    <br> 
                     <b>Tools:</b> Unity, C#
                     <br>
                     <ul class="list-inline">
@@ -158,7 +186,7 @@
                   </div>
                 </div>
       
-                <div class="resume-item d-flex flex-column flex-md-row mb-5">
+                <div id="stn" class="resume-item d-flex flex-column flex-md-row mb-5">
                   <div class="resume-content mr-auto">
                     <h4 class="mb-0">Using Spatial Transformer Networks for Egocentric Images</h4>
                     <div class="subheading mb-3">Dr. Arijit Sur, IIT Guwahati</div>
@@ -187,7 +215,7 @@
                   </div>
                 </div>
       
-                <div class="resume-item d-flex flex-column flex-md-row mb-5">
+                <div id="adha" class="resume-item d-flex flex-column flex-md-row mb-5">
                   <div class="resume-content mr-auto">
                     <h4 class="mb-0">Assistive Device for Hand Amputees</h4>
                     <div class="subheading mb-3">Dr. S. B. Nair, IIT Guwahati</div>
@@ -219,7 +247,7 @@
                   </div>
                 </div>
       
-                <div class="resume-item d-flex flex-column flex-md-row mb-5">
+                <div id="megamind" class="resume-item d-flex flex-column flex-md-row mb-5">
                   <div class="resume-content mr-auto">
                     <h4 class="mb-0">Text Readability Analysis using Language Models</h4>
                     <div class="subheading mb-3">Prof. Ashish Anand, IIT Guwahati</div>
